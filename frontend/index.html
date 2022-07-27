@@ -5,44 +5,52 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" type="text/css" href="./styles/style.css">
-   <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+   <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+   <link rel="stylesheet" type="text/css" href="./src/styles/navbar.css">
 
    <title>Flex Turismos</title>
 </head>
 <body>
    <div class="page">
-      <header class="navbar">
-         <div class="navbar-container">
+      <header>
+         <div class="navbar">
             <div class="container">
                <div class="brand">
-                  <a href="#" class="logo">FlexTurismos</a>
+                  <a href="#">FlexTurismos</a>
                </div>
-               <nav class="nav-content">
-                  <ul class="nav-list">
-                     <li class="list-items"><a href="#quem-somos">Quem Somos</a></li>
-                     <li class="list-items"><a href="#servicos">Serviços</a></li>
-                     <li class="list-items"><a href="#planos">Planos</a></li>
-                  </ul>
-               </nav>
+
+               <div class="menu">
+                  <div class="menu-mobile">
+                     <span class="one"></span>
+                     <span class="two"></span>
+                     <span class="three"></span>
+                  </div>
+                  <nav class="nav-content">
+                     <ul class="nav-list">
+                        <li class="list-items"><a href="#quem-somos">Quem Somos</a></li>
+                        <li class="list-items"><a href="#servicos">Serviços</a></li>
+                        <li class="list-items"><a href="#planos">Planos</a></li>
+                     </ul>
+                  </nav>
+               </div>
             </div>
          </div>
+      </header>
 
-         <section class="destaque">
-            <div class="destaque-container">
-               <div class="container">
-                  <div class="destaque-texto">
-                     <h1>Flex<br> Turismos</h1>
-                     <p>O melhor serviço para você!</p>
-                     <button class="btn-saiba-mais">Saiba mais!</button>
-                  </div>
-                  <div class="destaque-image">
-                     <img src="./assets/images/0-main.png" alt="">
-                  </div>
+      <section class="destaque">
+         <div class="destaque-container">
+            <div class="container">
+               <div class="destaque-texto">
+                  <h1>Flex<br> Turismos</h1>
+                  <p>O melhor serviço para você!</p>
+                  <button class="btn-saiba-mais">Saiba mais!</button>
+               </div>
+               <div class="destaque-image">
+                  <img src="./assets/images/0-main.png" alt="">
                </div>
             </div>
-         </section>
-      </header>
+         </div>
+      </section>
 
       <main>
          <section class="quem-somos">
@@ -138,5 +146,6 @@
          </div>
       </footer>
    </div>
+   <script src="./src/js/navbar.js"></script>
 </body>
 </html>

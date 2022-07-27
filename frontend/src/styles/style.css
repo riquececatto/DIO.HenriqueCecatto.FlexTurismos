@@ -27,7 +27,6 @@
 }
 
 .destaque-texto {
-   width: 100%;
 
    min-height: 220px;
 
@@ -50,6 +49,7 @@
 .btn-saiba-mais {
    width: 220px;
    height: 50px;
+   font-size: 24px;
 
    border-radius: 30px;
    background-color: var(--azul);

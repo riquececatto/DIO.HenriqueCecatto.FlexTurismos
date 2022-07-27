@@ -1,0 +1,147 @@
+@import url('./style.css');
+
+/* ======== NAVABR ======== */
+.navbar {
+   width: 100%;
+   height: 100px;
+
+   background-color: var(--azul);
+}
+
+.navbar .container {
+   width: 90%;
+   height: 100%;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.brand a {
+   text-decoration: none;
+   color: white;
+   font-size: 32px;
+}
+
+.menu {
+   width: 50%;
+}
+
+.nav-content {
+   width: 100%;
+}
+
+.nav-list {
+   width: 100%;
+   display: flex;
+
+   justify-content: space-around;
+}
+
+.list-items {
+   list-style: none;
+}
+
+.list-items a {
+   text-decoration: none;
+   color: white;
+
+   font-size: 18px;
+   padding: .2rem;
+}
+
+.list-items a:hover {
+   color: yellow;
+}
+
+/* ======================== */
+
+@media (max-width: 1000px) {
+   .nav-content {
+      display: none;
+   }
+
+   .menu {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   .menu-mobile {
+      width: 40px;
+      height: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      cursor: pointer;
+   }
+
+   .one, .two, .three {
+      content: "";
+      display: block;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: white;
+      transition-duration: .3s;
+   }
+
+   .menu.on {
+      position: absolute;
+
+      top: 0;
+      right: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      background-color: var(--azul);
+      transition-duration: .3s;
+   }
+
+   .menu.on .menu-mobile {
+      position: absolute;
+
+      top: 30px;
+      right: 60px;
+   }
+
+   .menu-section.on .two {
+      transition-duration: .0s;
+   }
+
+   .menu.on .menu-mobile .one {
+      transform: rotate(135deg) translate(14px, -5px);
+   }
+
+   .menu.on .menu-mobile .two {
+      opacity: 0;
+   }
+
+   .menu.on .menu-mobile .three {
+      transform: rotate(-135deg) translate(9px, 0px);
+   }
+
+   .menu.on .nav-content {
+      display: block;
+      margin: 0 auto;
+      margin-top: 70px;
+   }
+
+   .menu.on .nav-list {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .menu.on .list-items a {
+      font-size: 4rem;
+      transition-duration: .3s;
+  }
+}
