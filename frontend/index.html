@@ -1,151 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
-   <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
-   <link rel="stylesheet" type="text/css" href="./src/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/responsive.css">
 
-   <title>Flex Turismos</title>
+    <title>Flex Turismos</title>
 </head>
+
 <body>
-   <div class="page">
-      <header>
-         <div class="navbar">
-            <div class="container">
-               <div class="brand">
-                  <a href="#">FlexTurismos</a>
-               </div>
+    <div>
+        <!-- Header and Navigation -->
+        <header class="header">
+            <!-- Navigation -->
+            <div class="navbar bg-blue">
+                <div class="container">
 
-               <div class="menu">
-                  <div class="menu-mobile">
-                     <span class="one"></span>
-                     <span class="two"></span>
-                     <span class="three"></span>
-                  </div>
-                  <nav class="nav-content">
-                     <ul class="nav-list">
-                        <li class="list-items"><a href="#quem-somos">Quem Somos</a></li>
-                        <li class="list-items"><a href="#servicos">Serviços</a></li>
-                        <li class="list-items"><a href="#planos">Planos</a></li>
-                     </ul>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </header>
+                    <div class="navbar__brand">
+                        <a class="navbar__link" href="#">FlexTurismos</a>
+                    </div>
 
-      <section class="destaque">
-         <div class="destaque-container">
-            <div class="container">
-               <div class="destaque-texto">
-                  <h1>Flex<br> Turismos</h1>
-                  <p>O melhor serviço para você!</p>
-                  <button class="btn-saiba-mais">Saiba mais!</button>
-               </div>
-               <div class="destaque-image">
-                  <img src="./assets/images/0-main.png" alt="">
-               </div>
+                    <!-- Menu.Mobile -->
+                    <div class="navbar__menu">
+                        <!--  -->
+                        <div class="navbar__menu--mobile">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                        <!-- Menu.Main -->
+                        <nav class="navbar__menu--main">
+                            <ul class="navbar__list">
+                                <li class="navbar__item"><a class="navbar__link" href="#quem-somos">Quem Somos</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#servicos">Serviços</a>
+                                </li>
+                                <li class="navbar__item"><a class="navbar__link" href="#planos">Planos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
+        </header>
 
-      <main>
-         <section class="quem-somos">
-            <div class="qs-container">
-               <div class="container">
-                  <div class="qs-texto">
-                     <h1>| Quem Somos</h1>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-                     <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                  </div>
-                  <div class="qs-image">
-                     <img src="./assets/images/1-quem-somos.png" alt="">
-                  </div>
-               </div>
+        <!-- Main -->
+        <main class="main">
+            <div class="section">
+                <div class="container">
+                    <div class="section__content flex-column">
+                        <div class="section__header">
+                            <h1 class="section__title">Flex<br> Turismos</h1>
+                        </div>
+                        <div class="section__body flex-column">
+                            <p class="section__text">O melhor serviço para você!</p>
+                            <button class="section__btn bg-blue">Saiba mais!</button>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div>
+                            <img class="section__image" src="./src/assets/img/0-main.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-         </section>
-         <section class="servicos">
-            <div class="servicos-container">
-               <div class="container">
-                  <div class="servicos-texto">
-                     <h1>Serviços</h1>
-                  </div>
-                  <div class="servicos-content">
-                     <div class="servicos-list">
-                        <img src="./assets/images/icon-1.png" alt="">
-                        <p>Pacotes de viagens</p>
-                        <button class="btn-comprar-agora">Comprar agora</button>
-                     </div>
-                     <div class="servicos-list">
-                        <img src="./assets/images/icon-2.png" alt="">
-                        <p>Hospedagens</p>
-                        <button class="btn-comprar-agora">Comprar agora</button>
-                     </div>
-                     <div class="servicos-list">
-                        <img src="./assets/images/icon-3.png" alt="">
-                        <p>Roteiros personalizados</p>
-                        <button class="btn-comprar-agora">Comprar agora</button>
-                     </div>
-                  </div>
-               </div>
+            <div class="section">
+                <div class="container flex-row-reverse">
+                    <div class="section__content flex-column">
+                        <div class="section__header">
+                            <h1 class="section__title">| Quem Somos</h1>
+                        </div>
+                        <div class="section__body flex-column">
+                            <p class="section__text">It is a long established fact that a reader will be distracted by
+                                the readable
+                                content of
+                                a page when looking at its layout. </p>
+                            <p class="section__text">The point of using Lorem Ipsum is that it has a more-or-less normal
+                                distribution of
+                                letters, as opposed to using 'Content here, content here', making it look like
+                                readable
+                                English.</p>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div>
+                            <img class="section__image" src="./src/assets/img/1-quem-somos.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-         </section>
-         <section class="planos">
-            <div class="planos-container">
-               <div class="container">
-                  <div class="planos-texto">
-                     <h1>Planos</h1>
-                  </div>
-                  <div class="planos-content">
-                     <div class="planos-item">
-                        <h2>Plano 1</h3>
-                        <ul>
-                           <li>Suporte 24h</li>
-                           <li>Serviços de quarto</li>
-                           <li>Guia turístico</li>
-                        </ul>
-                        <button class="btn-saiba-mais">Saiba mais!</button>
-                     </div>
-                     <div class="planos-item">
-                        <h2>Plano 2</h3>
-                        <ul>
-                           <li>Suporte 24h</li>
-                           <li>Serviços de quarto</li>
-                           <li>Guia turístico</li>
-                           <li>Roteiro de trilhas</li>
-                           <li>Serviço personalizado</li>
-                        </ul>
-                        <button class="btn-saiba-mais">Saiba mais!</button>
-                     </div>
-                     <div class="planos-item">
-                        <h2>Plano 3</h3>
-                        <ul>
-                           <li>Suporte 24h</li>
-                           <li>Serviços de quarto</li>
-                           <li>Guia turístico</li>
-                           <li>Roteiro de trilhas</li>
-                           <li>Serviço personalizado</li>
-                           <li>Área Vip</li>
-                        </ul>
-                        <button class="btn-saiba-mais">Saiba mais!</button>
-                     </div>
-                  </div>
-               </div>
+            <div class="section bg-blue">
+                <div class="container flex-column">
+                    <div class="section__content">
+                        <div class="section__header">
+                            <h1 class="section__title">Serviços</h1>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div class="section__body">
+                            <div class="section__list flex-column">
+                                <img class="section__image" src="./src/assets/icon/icon-1.png" alt="">
+                                <p class="section__text"><b>Pacotes de viagens</b></p>
+                                <button class="section__btn bg-white">Comprar agora</button>
+                            </div>
+                            <div class="section__list flex-column">
+                                <img class="section__image" src="./src/assets/icon/icon-2.png" alt="">
+                                <p class="section__text"><b>Hospedagens</b></p>
+                                <button class="section__btn bg-white">Comprar agora</button>
+                            </div>
+                            <div class="section__list flex-column">
+                                <img class="section__image" src="./src/assets/icon/icon-3.png" alt="">
+                                <p class="section__text"><b>Roteiros personalizados</b></p>
+                                <button class="section__btn bg-white">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </section>
-      </main>
-      <footer>
-         <div class="footer">
+            <div class="section">
+                <div class="container flex-column">
+                    <div class="section__content">
+                        <div class="section__header">
+                            <h1 class="section__title">Planos</h1>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div class="section__body">
+                            <div class="section__list flex-column flex-end">
+                                <ul>
+                                    <li class="section__text">Suporte 24h</li>
+                                    <li class="section__text">Serviços de quarto</li>
+                                    <li class="section__text">Guia turístico</li>
+                                </ul>
+                                <button class="section__btn bg-blue">Saiba mais!</button>
+                            </div>
+                            <div class="section__list flex-column flex-end">
+                                <ul>
+                                    <li class="section__text">Suporte 24h</li>
+                                    <li class="section__text">Serviços de quarto</li>
+                                    <li class="section__text">Guia turístico</li>
+                                    <li class="section__text">Roteiro de trilhas</li>
+                                    <li class="section__text">Serviço personalizado</li>
+                                </ul>
+                                <button class="section__btn bg-blue">Saiba mais!</button>
+                            </div>
+                            <div class="section__list flex-column flex-end">
+                                <ul>
+                                    <li class="section__text">Suporte 24h</li>
+                                    <li class="section__text">Serviços de quarto</li>
+                                    <li class="section__text">Guia turístico</li>
+                                    <li class="section__text">Roteiro de trilhas</li>
+                                    <li class="section__text">Serviço personalizado</li>
+                                    <li class="section__text">Área Vip</li>
+                                </ul>
+                                <button class="section__btn bg-blue">Saiba mais!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer bg-blue">
             <div class="container">
-               <p>&copy; 2022 CSS Flexbox</p>
-               <p>Desenvolvido por: Seu nome aqui dev</p>
+                <p>&copy; 2022 CSS Flexbox</p>
+                <p>Desenvolvido por: Henrique Cecatto</p>
             </div>
-         </div>
-      </footer>
-   </div>
-   <script src="./src/js/navbar.js"></script>
+        </footer>
+    </div>
+    <script src="./src/assets/js/scripts.js"></script>
 </body>
+
 </html>
