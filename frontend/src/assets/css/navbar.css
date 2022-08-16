@@ -2,7 +2,7 @@
 
 /* <!-- Header --> */
 .header {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .navbar__brand {
-    width: 100%;
+    width: auto;
 }
 
 .navbar__brand .navbar__link {
@@ -33,9 +33,9 @@
     width: 50%;
 }
 
-.navbar__menu--main {
+/* .navbar__menu--main {
     width: 100%;
-}
+} */
 
 .navbar__list {
     width: 100%;
