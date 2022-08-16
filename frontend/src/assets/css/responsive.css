@@ -124,7 +124,7 @@
     .navbar__menu.on .navbar__menu--main {
         position: fixed;
 
-        top: 10vh;
+        top: 70px;
         right: 0;
 
         width: 100vw;
